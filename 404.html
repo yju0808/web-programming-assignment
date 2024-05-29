@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="./style/404.css" />
 
     <script type="text/javascript">
-      var path = window.location.pathname;
-      window.location.replace('/web-programming-assignment/' + '?path=' + path);
+      setTimeout(function () {
+        var path = window.location.pathname;
+        window.location.replace('/web-programming-assignment/' + '?path=' + path);
+        console.log('/web-programming-assignment/' + '?path=' + path);
+      }, 10000);
     </script>
   </head>
   <body>
