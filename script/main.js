@@ -16,11 +16,17 @@ const app = document.querySelector('.App');
 const changeUrl = (requestedUrl) => {
   app.innerHTML = routes[requestedUrl].content;
 
+  if (!route) {
+    return;
+  }
+
   if (requestedUrl === './' || requestedUrl === '/' || requestedUrl === '/web-programming-assignment/') {
     history.pushState(null, null, './about');
   } else {
     history.pushState(null, null, requestedUrl);
   }
+
+  setActiveLink(requestedUrl);
 };
 
 window.addEventListener('popstate', () => {
@@ -38,3 +44,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   changeUrl(window.location.pathname);
 });
+
+const setActiveLink = (requestedUrl) => {
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach((link) => {
+    if (link.getAttribute('data-url') === requestedUrl) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+};
