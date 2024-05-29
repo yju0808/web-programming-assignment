@@ -4,9 +4,10 @@ import Resume from '../component/resume.js';
 
 const routes = {
   '/': { content: About },
-  '/about': { content: About },
-  '/projects': { content: Projects },
-  '/resume': { content: Resume },
+  './': { content: About },
+  './about': { content: About },
+  './projects': { content: Projects },
+  './resume': { content: Resume },
 };
 
 const app = document.querySelector('.App');
@@ -16,8 +17,8 @@ const changeUrl = (requestedUrl) => {
 
   console.log(requestedUrl);
 
-  if (requestedUrl === '/') {
-    history.pushState(null, null, '/about');
+  if (requestedUrl === './' || requestedUrl === '/') {
+    history.pushState(null, null, './about');
   } else {
     history.pushState(null, null, requestedUrl);
   }
