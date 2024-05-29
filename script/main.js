@@ -14,6 +14,8 @@ const app = document.querySelector('.App');
 const changeUrl = (requestedUrl) => {
   app.innerHTML = routes[requestedUrl].content;
 
+  console.log(requestedUrl);
+
   if (requestedUrl === '/') {
     history.pushState(null, null, '/about');
   } else {
