@@ -3,6 +3,7 @@ import Projects from '../component/projects.js';
 import Resume from '../component/resume.js';
 
 const routes = {
+  '/web-programming-assignment/': { content: About() },
   '/': { content: About() },
   './': { content: About() },
   './about': { content: About() },
@@ -16,7 +17,7 @@ const changeUrl = (requestedUrl) => {
   console.log(requestedUrl);
   app.innerHTML = routes[requestedUrl].content;
 
-  if (requestedUrl === './' || requestedUrl === '/') {
+  if (requestedUrl === './' || requestedUrl === '/' || requestedUrl === '/web-programming-assignment/') {
     history.pushState(null, null, './about');
   } else {
     history.pushState(null, null, requestedUrl);
