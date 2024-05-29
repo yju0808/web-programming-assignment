@@ -33,7 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  changeUrl(window.location.pathname);
+  const params = new URLSearchParams(window.location.search);
+  const initialPath = params.get('path') || window.location.pathname;
+  changeUrl(initialPath);
 });
 
 const setActiveLink = (requestedUrl) => {
