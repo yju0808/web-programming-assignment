@@ -9,6 +9,7 @@ const routes = {
 };
 
 const routes_mapper = {
+  '/web-programming-assignment/': './about',
   '/web-programming-assignment/about': './about',
   '/web-programming-assignment/projects': './projects',
   '/web-programming-assignment/resume': './resume',
