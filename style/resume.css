@@ -1,0 +1,116 @@
+.resume-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2.25rem;
+  color: white;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: white;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+
+.experience,
+.education,
+.volunteering {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+
+.section-title {
+  font-size: 1.875rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.skill-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.skill-category {
+  background-color: #d2d2d2;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.skill-item {
+  border: 2px solid white;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.875rem;
+}
+
+.divider {
+  height: 1px;
+  background-color: #f3f3f3;
+  opacity: 0.3;
+}
+
+.experience-item,
+.education-item,
+.volunteering-item {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.education-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.experience-title,
+.education-title,
+.volunteering-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.experience-period,
+.education-period,
+.volunteering-period {
+  color: #d1d1d1;
+}
+
+.experience-details,
+.volunteering-details {
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}

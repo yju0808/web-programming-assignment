@@ -1,0 +1,83 @@
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.projects-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2.25rem;
+  color: white;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: white;
+}
+
+.divider {
+  height: 1px;
+  background-color: #f3f3f3;
+  opacity: 0.3;
+  margin: 20px 0;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+}
+
+.project-period {
+  color: #d1d1d1;
+}
+
+.project-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.skill {
+  border: 2px solid white;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  color: white;
+}
+
+.project-details {
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+}
