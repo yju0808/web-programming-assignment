@@ -14,7 +14,6 @@ const routes = {
 const app = document.querySelector('.App');
 
 const changeUrl = (requestedUrl) => {
-  console.log(requestedUrl);
   app.innerHTML = routes[requestedUrl].content;
 
   if (requestedUrl === './' || requestedUrl === '/' || requestedUrl === '/web-programming-assignment/') {
