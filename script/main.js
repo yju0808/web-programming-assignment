@@ -14,11 +14,11 @@ const routes = {
 const app = document.querySelector('.App');
 
 const changeUrl = (requestedUrl) => {
-  app.innerHTML = routes[requestedUrl].content;
-
-  if (!route) {
-    return;
+  if (!routes[requestedUrl]) {
+    requestedUrl = './';
   }
+
+  app.innerHTML = routes[requestedUrl].content;
 
   if (requestedUrl === './' || requestedUrl === '/' || requestedUrl === '/web-programming-assignment/') {
     history.pushState(null, null, './about');
