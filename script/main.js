@@ -3,8 +3,6 @@ import Projects from '../component/projects.js';
 import Resume from '../component/resume.js';
 
 const routes = {
-  '/web-programming-assignment/': { content: About() },
-  '/': { content: About() },
   './': { content: About() },
   './about': { content: About() },
   './projects': { content: Projects() },
