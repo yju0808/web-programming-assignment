@@ -2,7 +2,7 @@ export default function About() {
   return `
     <section class='about-container'>
       <section class='profile'>
-        <img src='./asset/kantlim.jpeg' alt='My Image' class='profile-image' />
+        <img src='../asset/kantlim.jpeg' alt='My Image' class='profile-image' />
         <div class='profile-details'>
           <div class='profile-header'>
             <h1 class='profile-name'>임정욱</h1>
