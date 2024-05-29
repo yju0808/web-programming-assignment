@@ -35,6 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const params = new URLSearchParams(window.location.search);
   const initialPath = params.get('path') || window.location.pathname;
+  console.log(params);
+  console.log(initialPath);
   changeUrl(initialPath);
 });
 
