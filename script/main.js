@@ -3,7 +3,6 @@ import Projects from '../component/projects.js';
 import Resume from '../component/resume.js';
 
 const routes = {
-  './': { content: About() },
   './about': { content: About() },
   './projects': { content: Projects() },
   './resume': { content: Resume() },
@@ -13,17 +12,11 @@ const app = document.querySelector('.App');
 
 const changeUrl = (requestedUrl) => {
   if (!routes[requestedUrl]) {
-    requestedUrl = './';
+    requestedUrl = './about';
   }
 
   app.innerHTML = routes[requestedUrl].content;
-
-  if (requestedUrl === './' || requestedUrl === '/' || requestedUrl === '/web-programming-assignment/') {
-    history.pushState(null, null, './about');
-  } else {
-    history.pushState(null, null, requestedUrl);
-  }
-
+  history.pushState(null, null, requestedUrl);
   setActiveLink(requestedUrl);
 };
 
