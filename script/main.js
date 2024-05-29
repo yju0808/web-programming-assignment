@@ -8,9 +8,19 @@ const routes = {
   './resume': { content: Resume() },
 };
 
+const routes_mapper = {
+  '/web-programming-assignment/about': './about',
+  '/web-programming-assignment/projects': './projects',
+  '/web-programming-assignment/resume': './resume',
+};
+
 const app = document.querySelector('.App');
 
 const changeUrl = (requestedUrl) => {
+  if (routes_mapper[requestedUrl]) {
+    requestedUrl = routes_mapper[requestedUrl];
+  }
+
   if (!routes[requestedUrl]) {
     requestedUrl = './about';
   }
