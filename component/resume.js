@@ -1,5 +1,5 @@
 export default function Resume() {
-  `
+  return `
     <section class='resume-container'>
       <div class='resume-header'>
         <h1 class='title'>임정욱</h1>

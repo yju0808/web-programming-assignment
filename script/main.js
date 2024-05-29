@@ -3,19 +3,18 @@ import Projects from '../component/projects.js';
 import Resume from '../component/resume.js';
 
 const routes = {
-  '/': { content: About },
-  './': { content: About },
-  './about': { content: About },
-  './projects': { content: Projects },
-  './resume': { content: Resume },
+  '/': { content: About() },
+  './': { content: About() },
+  './about': { content: About() },
+  './projects': { content: Projects() },
+  './resume': { content: Resume() },
 };
 
 const app = document.querySelector('.App');
 
 const changeUrl = (requestedUrl) => {
-  app.innerHTML = routes[requestedUrl].content;
-
   console.log(requestedUrl);
+  app.innerHTML = routes[requestedUrl].content;
 
   if (requestedUrl === './' || requestedUrl === '/') {
     history.pushState(null, null, './about');
